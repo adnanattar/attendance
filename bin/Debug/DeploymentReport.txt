@@ -1,0 +1,44 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[Address]
+       [dbo].[AddressType]
+       [dbo].[Employee]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       Primary Key: unnamed constraint on [dbo].[Attendance]
+     Possible data issues
+       The type for column isActive in table [dbo].[Address] is currently  NCHAR (10) NOT NULL but is being changed to  BIT
+         NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  BIT
+         NULL.
+       The type for column AddressType in table [dbo].[AddressType] is currently  NVARCHAR (50) NULL but is being changed to 
+         NVARCHAR (20) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible
+         with type  NVARCHAR (20) NOT NULL.
+       The type for column ID in table [dbo].[AddressType] is currently  NCHAR (10) NOT NULL but is being changed to  INT NOT
+         NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NOT
+         NULL.
+
+** User actions
+     Recreate table
+       [dbo].[Address] (Table)
+       [dbo].[AddressType] (Table)
+       [dbo].[Employee] (Table)
+     Alter
+       [dbo].[Attendance] (Table)
+     Create
+       Primary Key: unnamed constraint on [dbo].[Attendance] (Primary Key)
+       [dbo].[EmployeeAddress] (Table)
+
+** Supporting actions
+
+The column AddressTypeID on table [dbo].[Address] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column EmployeeID on table [dbo].[Address] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column isActive in table [dbo].[Address] is currently  NCHAR (10) NOT NULL but is being changed to  BIT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  BIT NULL.
+The column AddressType on table [dbo].[AddressType] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column AddressType in table [dbo].[AddressType] is currently  NVARCHAR (50) NULL but is being changed to  NVARCHAR (20) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (20) NOT NULL.
+The type for column ID in table [dbo].[AddressType] is currently  NCHAR (10) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NOT NULL.
+The column DepartmentID on table [dbo].[Attendance] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column EmployeeID on table [dbo].[Attendance] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column ID on table [dbo].[Attendance] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column FirstName on table [dbo].[Employee] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

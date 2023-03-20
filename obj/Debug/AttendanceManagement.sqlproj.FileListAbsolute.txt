@@ -1,0 +1,6 @@
+D:\VisualStudioPrograms\AttendanceManagement\AttendanceManagement\bin\Debug\AttendanceManagement.dacpac
+D:\VisualStudioPrograms\AttendanceManagement\AttendanceManagement\bin\Debug\AttendanceManagement.dll
+D:\VisualStudioPrograms\AttendanceManagement\AttendanceManagement\bin\Debug\AttendanceManagement.pdb
+D:\VisualStudioPrograms\AttendanceManagement\AttendanceManagement\obj\Debug\AttendanceManagement.sqlproj.AssemblyReference.cache
+D:\VisualStudioPrograms\AttendanceManagement\AttendanceManagement\obj\Debug\AttendanceManagement.dll
+D:\VisualStudioPrograms\AttendanceManagement\AttendanceManagement\obj\Debug\AttendanceManagement.pdb

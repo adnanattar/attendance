@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Attendance].[DepartmentID] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Attendance].[AttendanceDate] (Column)
+     Alter
+       [dbo].[Attendance] (Table)
+     Create
+       [dbo].[AttendanceInfo] (Table)
+
+** Supporting actions
+
+The column [dbo].[Attendance].[DepartmentID] is being dropped, data loss could occur.
+
